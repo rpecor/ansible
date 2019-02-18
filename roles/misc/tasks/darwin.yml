@@ -27,5 +27,9 @@
   notify: restart dock
 
 - name: pin OSX dock to right edge
-  shell: defaults write com.apple.dock orientation right
+  shell: defaults write com.apple.dock orientation left
   notify: restart dock
+
+- name: display bluetooth in menu bar
+  shell: defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+  notify: restart systemui

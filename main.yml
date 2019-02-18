@@ -43,13 +43,6 @@
   tags:
   - term
 
-- name: Install and configure vim
-  hosts: all
-  roles:
-  - vim
-  tags:
-  - vim
-
 - name: Install chrome
   hosts: all
   roles:
