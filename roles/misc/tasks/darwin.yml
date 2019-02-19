@@ -1,26 +1,23 @@
 ---
-- name: install ag
-  homebrew:
-    name: the_silver_searcher
-    state: latest
-
 - name: install royal-tsx
-  shell: brew cask install royal-tsx
+  shell: brew cask install --appdir="/Applications" royal-tsx
 
-- name: install slack
-  shell: brew cask install slack
-  ignore_errors: yes # preinstalled version causing error
+#- name: install slack
+#  shell: brew cask install --appdir="/Applications" slack
+#  ignore_errors: yes # preinstalled version causing error
 
-- name: install libressl for teams
-  shell: brew install libressl
+#- name: install teams
+#  shell: brew cask install --appdir="/Applications" microsoft-teams
 
-- name: install teams
-  shell: brew cask install microsoft-teams
+- name: install spotify
+  shell: brew cask install --appdir="/Applications" spotify
 
-- name: install fswatch
+#- name: install visual studio code
+#  shell: brew cask install --appdir="/Applications" visual-studio-code
+
+- name: install node.js
   homebrew:
-    name: fswatch
-    state: latest
+    name: node
 
 - name: autohide OSX dock
   shell: defaults write com.apple.dock autohide true
