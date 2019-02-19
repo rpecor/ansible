@@ -15,12 +15,12 @@
   tags:
   - bootstrap
 
-# - name: Install and configure git
-#   hosts: all
-#   roles:
-#   - git
-#   tags:
-#   - git
+- name: Install and configure git
+  hosts: all
+  roles:
+  - git
+  tags:
+  - git
 
 - name: Install fonts
   hosts: all

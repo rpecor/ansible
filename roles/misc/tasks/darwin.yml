@@ -2,18 +2,18 @@
 - name: install royal-tsx
   shell: brew cask install --appdir="/Applications" royal-tsx
 
-#- name: install slack
-#  shell: brew cask install --appdir="/Applications" slack
-#  ignore_errors: yes # preinstalled version causing error
+- name: install slack
+ shell: brew cask install --appdir="/Applications" slack
+ ignore_errors: yes # preinstalled version causing error
 
-#- name: install teams
-#  shell: brew cask install --appdir="/Applications" microsoft-teams
+- name: install teams
+ shell: brew cask install --appdir="/Applications" microsoft-teams
 
 - name: install spotify
   shell: brew cask install --appdir="/Applications" spotify
 
-#- name: install visual studio code
-#  shell: brew cask install --appdir="/Applications" visual-studio-code
+- name: install visual studio code
+ shell: brew cask install --appdir="/Applications" visual-studio-code
 
 - name: install node.js
   homebrew:
